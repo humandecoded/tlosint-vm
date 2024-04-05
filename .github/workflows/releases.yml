@@ -23,6 +23,7 @@ jobs:
           chmod +x scripts/tl/*.sh
           chmod +x scripts/*.sh
           chmod +x *.sh
+          docker build . --file Dockerfile
 
       - name: Release with Notes
         uses: softprops/action-gh-release@v1
