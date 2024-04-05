@@ -23,8 +23,6 @@ jobs:
           chmod +x scripts/tl/*.sh
           chmod +x scripts/*.sh
           chmod +x *.sh
-          sudo ./build-in-container.sh -v virtualbox -f ova
-          
 
       - name: Release with Notes
         uses: softprops/action-gh-release@v1
